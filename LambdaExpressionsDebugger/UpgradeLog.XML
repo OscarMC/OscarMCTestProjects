@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ExtendedImmediateWindow">
+</Property><Property Name="Archivo de la solución" Value="D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow.sln">
+</Property><Property Name="Date" Value="martes, 05 de marzo de 2013">
+</Property><Property Name="Time" Value="10:42">
+</Property></Properties><Event ErrorLevel="0" Project="ExtendedImmediateWindow" Source="ExtendedImmediateWindow\ExtendedImmediateWindow.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="ExtendedImmediateWindow" Source="ExtendedImmediateWindow\ExtendedImmediateWindow.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TreeListView" Source="TreeListView\TreeListView.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="TreeListView" Source="TreeListView\TreeListView.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IntellisenseTextbox" Source="IntellisenseTextbox\IntellisenseTextbox.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="IntellisenseTextbox" Source="IntellisenseTextbox\IntellisenseTextbox.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="ExtendedImmediateWindow" Source="ExtendedImmediateWindow\ExtendedImmediateWindow.csproj" Description="No se puede leer el archivo de proyecto 'ExtendedImmediateWindow.csproj'. &#xA;D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\ExtendedImmediateWindow.csproj(185,3): No se encuentra el proyecto importado &quot;C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v9.0\VSSDK\Microsoft.VsSDK.targets&quot;. Asegúrese de que la ruta de acceso de la declaración &lt;Import&gt; es correcta y de que el archivo se encuentra en el disco.">
+</Event><Event ErrorLevel="0" Project="" Source="ExtendedImmediateWindow.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="ExtendedImmediateWindow.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TreeListView" Source="TreeListView\TreeListView.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="IntellisenseTextbox" Source="IntellisenseTextbox\IntellisenseTextbox.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

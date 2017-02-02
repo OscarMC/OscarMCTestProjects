@@ -1,0 +1,17 @@
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\obj\Release\SignalRChat.csprojResolveAssemblyReference.cache
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\obj\Release\SignalRChat.Properties.Resources.resources
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\obj\Release\SignalRChat.csproj.GenerateResource.Cache
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\SignalRChat.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Newtonsoft.Json.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Owin.dll
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\bin\Newtonsoft.Json.xml
+D:\ProyectosDePrueba\SignalRChatRoom\SignalRChat\obj\Release\SignalRChat.dll

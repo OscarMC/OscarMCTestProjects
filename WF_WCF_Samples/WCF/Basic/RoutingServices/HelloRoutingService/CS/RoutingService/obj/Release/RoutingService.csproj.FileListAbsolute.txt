@@ -1,0 +1,6 @@
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\bin\RoutingService.exe.config
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\bin\RoutingService.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\bin\RoutingService.pdb
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\obj\Release\RoutingService.csprojResolveAssemblyReference.cache
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\obj\Release\RoutingService.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\RoutingService\obj\Release\RoutingService.pdb

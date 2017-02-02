@@ -1,0 +1,30 @@
+﻿body
+{
+	FONT-SIZE: 16px;
+	margin: 0px;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: white;
+}
+.DATAINFO
+{
+    FONT-SIZE: 12px;
+    TEXT-DECORATION: none
+}
+
+.TITLEINFO
+{
+    FONT-SIZE: 16pt;
+    TEXT-DECORATION: none
+}
+
+.LINK
+{
+    FONT-SIZE: 12pt;
+    TEXT-DECORATION: none
+}
+
+.td
+{
+ FONT-SIZE: 16px;
+	
+}

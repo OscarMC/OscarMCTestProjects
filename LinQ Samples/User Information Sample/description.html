@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>此示例演示如何使用</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>此示例演示如何使用</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="技术">技术</label>
+                        <div id="技术">
+                            .NET Framework
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="主题">主题</label>
+                        <div id="主题">
+                            Language Samples, Office Interio
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">上次更新日期</label>
+                    <div id="LastUpdated">2011/11/28</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">许可证</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/This-sample-shows-how-to-22aadc9b">在线查看此示例</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = '复制代码';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p>本示例演示如何使用称为“COM 互操作”<em></em>、“省略 ref”<strong></strong>、“索引属性”<em></em>、“命名参数”和“可选参数”<em></em>的 C# 4.0 功能来创建与 Microsoft Office 进行通信的 C# 应用程序。 传统上，为了访问 Word、Excel 等 Microsoft Office 应用程序，C# 开发人员不得不编写相对冗长的代码。 新增的 C# 4.0 功能极大简化了对 Office API 的调用。</p>
+<p>请看本示例中所用 Microsoft Office 方法的以下声明：</p>
+<p>void PasteSpecial(<span class="style1"></span>IconIndex = <span class="style1">
+</span>, <span class="style1"></span>Link = <span class="style1"></span>, <br>
+&nbsp;&nbsp;&nbsp; <span class="style1"></span>Placement = <span class="style1">
+</span>, <span class="style1"></span>DisplayAsIcon = <span class="style1"></span>,<span class="style1"></span><br>
+<span class="style1"></span>DataType = <span class="style1"></span>, <span class="style1">
+</span>IconFileName = <span class="style1"></span>, <br>
+<span class="style1"></span>IconLabel = <span class="style1"></span>);</p>
+<p>可以看到，此方法接受相当多的参数。 在 C# 中，开发人员传统上必须填写每个参数，即使进行这一调用的开发人员本欲通过支持可选参数来简化其使用也是如此。 在 C# 4.0 中，利用新增的对命名参数和可选参数的支持，开发人员可以仅指定所需参数，其他参数则使用其默认&#20540;：</p>
+<p>word.Selection.PasteSpecial(Link: <span class="style1"></span>, DisplayAsIcon:
+<span class="style1"></span>);</p>
+<p>在对 <strong>PasteSpecial</strong> 方法的调用中，<strong>Link</strong> 和 <strong>DisplayAsIcon</strong> 参数是显式命名的，且设置为&#20540;
+<span class="style5"><strong>true</strong></span>。 所有其他参数都默认为 Office API 开发人员在内部指定的&#20540;，如上面的签名所示。</p>
+<p>您可以创建自己的支持命名参数和可选参数的调用。 请看以下示例：</p>
+<p class="style2"><span class="style1"></span>M(<span class="style1"></span> x,
+<span class="style1"></span>y = 5, <span class="style1"></span>z = 7) { }</p>
+<p>在此方法中，为参数 y 和 z 分配了默认&#20540;。 对此方法的调用如下所示：</p>
+<p>M(<span class="style3">1</span>, <span class="style3">2</span>, <span class="style3">
+3</span>); <span class="style4">// M 的普通调用</span><br>
+M(<span class="style3">1</span>, 2);<span class="style4"> // 省略 z，等效于 M(1, 2, 7)</span><br>
+M(<span class="style3">1</span>);&nbsp; <span class="style4">// 同时省略 y 和 z，等效于 M(1, 5, 7)</span><br>
+M(<span class="style3">1</span>, z:<span class="style3"> 3</span>); <span class="style4">
+// 通过名称传递 z</span><br>
+M(x: <span class="style3">1</span>, z:<span class="style3"> 3</span>); <span class="style4">
+// 通过名称同时传递 x 和 z</span><br>
+M(z:<span class="style3"> 3</span>, x:<span class="style3"> 1</span>); <span class="style4">
+// 反转实参的顺序</span></p>
+<p>通过 C# 4.0 新增的动态功能，C# 开发人员可以更加方便地对 Office 编程。 现在，Office 中使用的类型可供 C# 开发人员调用，如同以 <strong>
+dynamic</strong> 类型对它们进行了声明一样。 下面是设置单元&#26684;属性的传统方式：</p>
+<p class="style2">((Excel.Range)excel.Cells[1, 1]).Value2 = &quot;ID&quot;;</p>
+<p>现在，在 C# 4.0 中，开发人员可以编写如下所示的代码：</p>
+<p class="style2">X1.Cells[<span class="style3">1</span>, <span class="style3">
+1</span>].Value =<span class="style3"> &quot;ID&quot;</span>;</p>
+<p>借助索引属性<em></em>功能，可以进一步简化调用，如下所示：</p>
+<p class="style2">xl.Cells[1, 1] = &quot;ID&quot;;</p>
+<p>最后要介绍的是 No-PIA 功能，Office 开发人员一定会对它感兴趣。 主互操作程序集从 COM 接口生成，可在设计时提供有用的类型支持。 不过在运行时，这些程序集会增加程序的大小，可能导致版本控制问题。 利用 No-PIA 功能，可以继续在设计时使用 PIA，但在运行时省略 PIA。 C# 编译器将程序实际使用的小部分 PIA 直接复制到其程序集中。 您不再需要在程序的分发中包括 PIA。</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

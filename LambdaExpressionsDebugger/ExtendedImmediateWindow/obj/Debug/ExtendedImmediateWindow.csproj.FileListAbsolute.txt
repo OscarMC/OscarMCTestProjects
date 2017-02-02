@@ -1,0 +1,35 @@
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\ExtendedImmediateWindow.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\ExtendedImmediateWindow.pdb
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\ExtendedImmediateWindow.pkgdef
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.Resources.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.VSPackage.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.csproj.GenerateResource.Cache
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.cto
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.pdb
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\IntellisenseTextbox.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\IntellisenseTextbox.pdb
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ControlResources.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\TreeListView.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\bin\Debug\TreeListView.pdb
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ToolWindowControl.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.Implementation.SplashScreen.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\ExtendedImmediateWindow\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ResultControl.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\ExtendedImmediateWindow.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\ExtendedImmediateWindow.pdb
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\IntellisenseTextbox.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\TreeListView.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\IntellisenseTextbox.pdb
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\bin\Debug\TreeListView.pdb
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\ResolveAssemblyReference.cache
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ControlResources.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.Implementation.SplashScreen.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ToolWindowControl.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.Resources.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.ResultControl.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\uboot.ExtendedImmediateWindow.VSPackage.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\ResGen.read.1.tlog
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\ResGen.write.1.tlog
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\ExtendedImmediateWindow\obj\Debug\ExtendedImmediateWindow.pdb

@@ -1,0 +1,98 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="TabSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="EditorFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Courier New, 12pt</Value>
+    </Setting>
+    <Setting Name="Toolbar_DisplayStyle" Type="System.Windows.Forms.ToolStripItemDisplayStyle" Scope="User">
+      <Value Profile="(Default)">ImageAndText</Value>
+    </Setting>
+    <Setting Name="SelectedProduct" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Visual Studio 2008</Value>
+    </Setting>
+    <Setting Name="NodeDisplayStyle" Type="SnippetEditor.SnippetExplorer.NodeDisplayStyle" Scope="User">
+      <Value Profile="(Default)">Title</Value>
+    </Setting>
+    <Setting Name="Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">970</Value>
+    </Setting>
+    <Setting Name="Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">845</Value>
+    </Setting>
+    <Setting Name="PropertiesPanel_Collapsed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ReferencesPanel_Collapsed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ImportsPanel_Collapsed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CodePanel_Collapsed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CodeWindowHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">381</Value>
+    </Setting>
+    <Setting Name="SplitterPosition" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">265</Value>
+    </Setting>
+    <Setting Name="Products" Type="SnippetEditor.Utility.ProductCollection" Scope="User">
+      <Value Profile="(Default)">   &lt;ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Studio 2005&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VisualStudio\8.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Basic 2005 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VBExpress\8.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual C# 2005 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VCSExpress\8.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Web Developer 2005 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VWDExpress\8.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Studio 2008&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VisualStudio\9.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Basic 2008 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VBExpress\9.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual C# 2008 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VCSExpress\9.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Web Developer 2008 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VWDExpress\9.0&lt;/RegistryPath&gt;
+      &lt;/Product &gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Studio 2010&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VisualStudio\10.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Basic 2010 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VBExpress\10.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual C# 2010 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VCSExpress\10.0&lt;/RegistryPath&gt;
+      &lt;/Product&gt;
+      &lt;Product&gt;
+         &lt;Name&gt;Visual Web Developer 2010 Express Edition&lt;/Name&gt;
+         &lt;RegistryPath&gt;SOFTWARE\Microsoft\VWDExpress\10.0&lt;/RegistryPath&gt;
+      &lt;/Product &gt;
+   &lt;/ArrayOfProduct&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

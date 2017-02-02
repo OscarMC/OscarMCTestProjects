@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Channel</title>
+    <link>~/sample.aspx</link>
+    <description>RSS Subscription for Northwind Products</description>
+    <ttl>10</ttl>
+    <item>
+      <id></id>
+      <description></description>
+      <link></link>
+    </item>
+  </channel>
+</rss>

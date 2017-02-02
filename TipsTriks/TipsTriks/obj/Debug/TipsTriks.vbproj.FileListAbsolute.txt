@@ -1,0 +1,3 @@
+D:\ProyectosDePrueba\TipsTriks\TipsTriks\obj\Debug\TipsTriks.vbprojResolveAssemblyReference.cache
+D:\ProyectosDePrueba\TipsTriks\TipsTriks\obj\Debug\TipsTriks.Resources.resources
+D:\ProyectosDePrueba\TipsTriks\TipsTriks\obj\Debug\TipsTriks.vbproj.GenerateResource.Cache

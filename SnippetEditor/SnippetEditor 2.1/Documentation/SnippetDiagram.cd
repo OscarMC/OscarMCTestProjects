@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SnippetEditor.SnippetRepresentation.Snippet">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQAAAAAAAgAAkAAEAAAAQQIAAAAAAAAAgAAA=</HashCode>
+      <FileName>Snippet Object Model\Snippet.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="References" />
+      <Property Name="Declarations" />
+      <Property Name="Code" />
+      <Property Name="Imports" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Code">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAUAAACABAAQAAgAAAAAAEAABAAJAAAEAAAAAAAAA=</HashCode>
+      <FileName>Snippet Object Model\Code.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Declarations">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAACAAAAAAE=</HashCode>
+      <FileName>Snippet Object Model\Declarations.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Replacements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.References">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAgAAAAAAAIAAAAAAAAAAAAI=</HashCode>
+      <FileName>Snippet Object Model\References.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="List" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Replacement">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABACAQAAAAAAAQQAgABAIgIGAAAAAIAAAQACIAAQAKI=</HashCode>
+      <FileName>Snippet Object Model\Replacement.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Import">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAIIAAAAAAAAAACAA=</HashCode>
+      <FileName>Snippet Object Model\Import.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Reference">
+    <Position X="10.5" Y="6.25" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAgAAAAAAAAAQAAIAACAAAAAAAAAA=</HashCode>
+      <FileName>Snippet Object Model\Reference.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Header">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAIBgAVAEwAAAAAAEBAAAAKAAAAAAQgAAgAA=</HashCode>
+      <FileName>Snippet Object Model\Header.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Keywords" />
+      <Property Name="SnippetTypes" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.CodeSnippet">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="New" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAEAAgAAAAAAAAAgAAIEAAAAAAgAAAEA=</HashCode>
+      <FileName>Snippet Object Model\CodeSnippet.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Header" />
+      <Property Name="Snippet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.SnippetTypes">
+    <Position X="3" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAgAAAAAAAAAAAAIAAAAAAAAAAAAI=</HashCode>
+      <FileName>Snippet Object Model\SnippetTypes.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Keywords">
+    <Position X="3" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAABAAAAAAAAAI=</HashCode>
+      <FileName>Snippet Object Model\Keywords.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnippetEditor.SnippetRepresentation.Imports">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIQAAAAAAAAAAAI=</HashCode>
+      <FileName>Snippet Object Model\Imports.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="List" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

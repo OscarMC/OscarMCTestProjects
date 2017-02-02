@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uboot.ExtendedImmediateWindow</RootNamespace>
+    <AssemblyName>ExtendedImmediateWindow</AssemblyName>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile>VsPackage\Key.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProjectGuid>{67A880B1-E1B3-4060-B3E0-78A7E01A7809}</ProjectGuid>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\EnvDTE.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\EnvDTE80.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Package.LanguageService.9.0, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.9.0" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\Extensions\Extensions.cs" />
+    <Compile Include="Implementation\Helpers\Compiler.cs" />
+    <Compile Include="Implementation\Helpers\LocalMember.cs" />
+    <Compile Include="Implementation\Helpers\ReferenceResolver.cs" />
+    <Compile Include="Implementation\Helpers\TempFileNameService.cs" />
+    <Compile Include="Implementation\Injector.cs" />
+    <Compile Include="Implementation\MainController.cs" />
+    <Compile Include="Implementation\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implementation\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ToolStripSpringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Implementation\ViewController.cs" />
+    <Compile Include="ResultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultControl.Designer.cs">
+      <DependentUpon>ResultControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VsPackage\EditorFactory.cs" />
+    <Compile Include="Implementation\ToolWindowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Implementation\ToolWindowControl.Designer.cs">
+      <DependentUpon>ToolWindowControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VsPackage\VsToolWindow.cs" />
+    <Compile Include="VsPackage\Guids.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VsPackage\GlobalSuppressions.cs" />
+    <Compile Include="ExtendedImmediateWindowPackage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VsPackage\PkgCmdID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ControlResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementation\ToolWindowControl.resx">
+      <DependentUpon>ToolWindowControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultControl.resx">
+      <DependentUpon>ResultControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSPackage.resx">
+      <MergeWithCTO>true</MergeWithCTO>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <VSCTCompile Include="ExtendedImmediateWindow.vsct">
+      <ResourceName>1000</ResourceName>
+    </VSCTCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VsPackage\Key.snk" />
+    <None Include="Resources\Images_32bit.bmp" />
+    <None Include="Resources\Images_24bit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intruding Methods Logo.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\Filter2HS.png" />
+    <None Include="Resources\fullscreen.png" />
+    <None Include="Resources\intruding methods icon 16x16 version 3.png" />
+    <None Include="Resources\connect.png" />
+    <Content Include="Resources\Package.ico" />
+    <Content Include="Resources\play2.png" />
+    <None Include="Resources\UBoot Splash 3b.png" />
+    <None Include="Resources\saveas.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\saveall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntellisenseTextbox\IntellisenseTextbox.csproj">
+      <Project>{95890639-746D-4F19-B9C1-3B7E03A1168C}</Project>
+      <Name>IntellisenseTextbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TreeListView\TreeListView.csproj">
+      <Project>{45B78DDC-693E-4FE4-81B8-E879808A7ED7}</Project>
+      <Name>TreeListView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <!--
+    To specify a different registry root to register your package, uncomment the TargetRegistryRoot
+    tag and specify a registry root in it.
+    <TargetRegistryRoot></TargetRegistryRoot>
+    -->
+    <RegisterOutputPackage>true</RegisterOutputPackage>
+    <RegisterWithCodebase>true</RegisterWithCodebase>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

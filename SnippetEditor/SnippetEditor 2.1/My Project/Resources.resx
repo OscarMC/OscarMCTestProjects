@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg_Add_New_Snippet_Default" xml:space="preserve">
+    <value>NewSnippet</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Title" xml:space="preserve">
+    <value>Enter a name for the new folder</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="img_Collapse_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Collapse_large.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ani_bottle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ani_bottle.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_Snippet_As" xml:space="preserve">
+    <value>Save Snippet As...</value>
+  </data>
+  <data name="img_Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_Options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item_Missing_Choice_Explanation" xml:space="preserve">
+    <value>Press OK to continue loading or press Cancel to abort.</value>
+  </data>
+  <data name="img_Folders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folders.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snippet_Closing1" xml:space="preserve">
+    <value>The opened snippet is about to be closed.</value>
+  </data>
+  <data name="Msg_Delete_File_Title" xml:space="preserve">
+    <value>Delete Snippet</value>
+  </data>
+  <data name="img_Zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zoom2.BMP;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_ToVSI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToVSI.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_Remove_Folder_Prompt" xml:space="preserve">
+    <value>Are you sure you want to remove from the snippet collection the folder : </value>
+  </data>
+  <data name="img_Expand_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Expand_large.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mnu_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Mnu_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Prompt" xml:space="preserve">
+    <value>Add New Folder</value>
+  </data>
+  <data name="Compile_Errors" xml:space="preserve">
+    <value>Compilation found {0} error(s)</value>
+  </data>
+  <data name="img_Folder_open_virtual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_open_virtual.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_Snippet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snippet.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Language_Not_Supported" xml:space="preserve">
+    <value>Language not supported.</value>
+  </data>
+  <data name="Error_Loading_Code_Snippet" xml:space="preserve">
+    <value>Error while loading the code snippet...</value>
+  </data>
+  <data name="img_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_Folder_open_hidden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_open_hidden.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_Folder_closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_closed.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open_Snippet" xml:space="preserve">
+    <value>Open Snippet...</value>
+  </data>
+  <data name="Attribute_Expected" xml:space="preserve">
+    <value>'{0}' attribute is expected for node:</value>
+  </data>
+  <data name="img_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_Close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Compile_Line" xml:space="preserve">
+    <value> at line</value>
+  </data>
+  <data name="Export_Title" xml:space="preserve">
+    <value>Export snippet to VSI</value>
+  </data>
+  <data name="Snippet_Closing2" xml:space="preserve">
+    <value>Do you want to save the changes?</value>
+  </data>
+  <data name="MyDocs_Snippets_Path" xml:space="preserve">
+    <value>\Visual Studio\8.0\Code Snippets\VB\My Code Snippets\</value>
+  </data>
+  <data name="Msg_Delete_Folder_Title" xml:space="preserve">
+    <value>Delete Folder</value>
+  </data>
+  <data name="Untitled" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="img_Folder_closed_virtual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_closed_virtual.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help_Text" xml:space="preserve">
+    <value>please see the documentation on gotdotnet</value>
+  </data>
+  <data name="Msg_Add_New_Snippet_Title" xml:space="preserve">
+    <value>Add New Snippet</value>
+  </data>
+  <data name="img_RefreshDocView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RefreshDocView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snippet_Extension" xml:space="preserve">
+    <value>snippet</value>
+  </data>
+  <data name="Cannot_Find_CodeSnippet" xml:space="preserve">
+    <value>Unable to find a snippet in file</value>
+  </data>
+  <data name="Save_Snippet_Error" xml:space="preserve">
+    <value> unable to save snippet </value>
+  </data>
+  <data name="Save_Snippet_Success" xml:space="preserve">
+    <value> snippet successfully saved </value>
+  </data>
+  <data name="Export_Snippet_Error" xml:space="preserve">
+    <value> unable to export snippet to VSI</value>
+  </data>
+  <data name="Msg_Remove_Folder_Title" xml:space="preserve">
+    <value>Remove Folder</value>
+  </data>
+  <data name="img_Close_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_Close_trans.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Element_Expected" xml:space="preserve">
+    <value>'{0}' element is expected for node:</value>
+  </data>
+  <data name="img_Idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_Idea.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Default" xml:space="preserve">
+    <value>MyFolder</value>
+  </data>
+  <data name="img_book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book_open.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error_Loading_Xml_File" xml:space="preserve">
+    <value>Error loading XML file...</value>
+  </data>
+  <data name="img_SychronizeList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SychronizeList.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error_Opening_File_Tile" xml:space="preserve">
+    <value>Unable to open file...</value>
+  </data>
+  <data name="Welcome_HTML" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;VB Snippet Editor Tips&lt;/title&gt;
+&lt;style type="text/css"&gt;blockquote{font-family: Verdana;text-align: justify;}&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+&lt;h3&gt;Quick Start Tips:&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Double click on a snippet in the treeview to &lt;b&gt;
+edit&lt;/b&gt; it&lt;br&gt;
+&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;To create a &lt;b&gt;new&lt;/b&gt; snippet, select the
+folder you want to add it to, then right click on that folder and select &lt;i&gt;Add
+New Snippet&lt;/i&gt; from the context menu&lt;br&gt;
+&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;Use the filter to help &lt;b&gt;search&lt;/b&gt; for
+snippets.&amp;nbsp; The filter is cumulative, so you can type in a new word
+to search for and the previous results will get filtered on the new
+term.&amp;nbsp; To reset the treeview to display all items, simply clear the
+filter term then click the apply button (or press Enter)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="Msg_Add_New_Snippet_Prompt" xml:space="preserve">
+    <value>Enter a name for the new snippet</value>
+  </data>
+  <data name="Cannot_Find_CodeSnippets" xml:space="preserve">
+    <value>Unable to find the snippets collection in file</value>
+  </data>
+  <data name="Error_Opening_File" xml:space="preserve">
+    <value>The following file could not be read :</value>
+  </data>
+  <data name="img_Folder_closed_hidden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_closed_hidden.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_NewDocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewDocument.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_Add_Existing_Folder_Prompt" xml:space="preserve">
+    <value>Select a folder to add to your snippet collection</value>
+  </data>
+  <data name="img_Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_Folder_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VSFolder_open.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export_SaveTypeFilter" xml:space="preserve">
+    <value>Visual Studio Community Content Installer File (*.vsi)|*.vsi</value>
+  </data>
+  <data name="Folder_Browser_Description" xml:space="preserve">
+    <value>Select Folder to open...</value>
+  </data>
+  <data name="Msg_Delete_File_Prompt" xml:space="preserve">
+    <value>Warning: This will permanetly remove the snippet from your file system. Are you sure you want to delete this snippet ?</value>
+  </data>
+  <data name="Msg_Delete_Folder_Prompt" xml:space="preserve">
+    <value>Are you sure you want to delete the folder : </value>
+  </data>
+  <data name="message_in_a_bottle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\message in a bottle.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export_Snippet_Success" xml:space="preserve">
+    <value> Snippet successfully exported to .VSI </value>
+  </data>
+  <data name="OpenSaveTypeFilter" xml:space="preserve">
+    <value>Visual Studio Snippets (*.snippet)|*.snippet|All files (*.*)|*.*</value>
+  </data>
+  <data name="Snippet_Editor" xml:space="preserve">
+    <value>Snippet Editor</value>
+  </data>
+  <data name="img_newFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newFolder.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_Snippet_Cancelled" xml:space="preserve">
+    <value>save operation cancelled</value>
+  </data>
+  <data name="Error_Saving_To_File" xml:space="preserve">
+    <value>Error saving to file...</value>
+  </data>
+  <data name="Compile_Error" xml:space="preserve">
+    <value>Error#</value>
+  </data>
+  <data name="Error_Saving_To_File_Message" xml:space="preserve">
+    <value>Make sure the file is not read-only and that you have the appropriate permissions to access it.</value>
+  </data>
+  <data name="Export_Snippet_Cancelled" xml:space="preserve">
+    <value>export operation cancelled</value>
+  </data>
+  <data name="NewLiteral" xml:space="preserve">
+    <value>NewLiteral</value>
+  </data>
+  <data name="About_HTML" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;About&lt;/title&gt;
+&lt;style type="text/css"&gt;p{font-family: Verdana;font-size: 9pt;text-align: justify;}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;
+The VB Snippet Editor started its journey into the world back in the early days
+of Visual Studio 2005 betas. An unidentified &amp;quot;intern&amp;quot; working at Microsoft wrote
+the initial code to edit a snippet. Microsoft decided not to put any more effort
+into developing the editor, instead placing it as an unfinished open source
+project on GotDotNet. &lt;/p&gt;
+&lt;p&gt;
+The project was quickly taken up by VB MVP Bill McCarthy. Bill fixed the initial
+problems in the object model, and then systematically went about adding and
+improving features including code colorization, snippet browsing and collection
+management, and Vista awareness.
+&lt;/p&gt;
+&lt;p&gt;
+Fellow VB MVPs Maurice de Beijer, Richard Clark, Herfried K. Wagner and Corrado
+Cavalli provided translations to Dutch, French, German, and Italian.
+&lt;/p&gt;
+&lt;p&gt;
+Today little if any of the original code remains, but the dream of a community
+developed product has blossomed, and borne fruit : the VB Snippet Editor.
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="NewObject" xml:space="preserve">
+    <value>NewObject</value>
+  </data>
+  <data name="Compiled_Code" xml:space="preserve">
+    <value>Compiled code:</value>
+  </data>
+  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

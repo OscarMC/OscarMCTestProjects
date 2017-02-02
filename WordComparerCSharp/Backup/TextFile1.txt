@@ -1,0 +1,33 @@
+Besides the technical problems, you must also consider the feasibility of such a design with 
+respect to licensing. 
+Current licensing guidelines prevent Office Applications from being used on server 
+to service client requests, unless those clients themselves have licensed copies of Office. 
+Using server-side Automation to provide Office functionality to unlicensed workstations is not 
+covered by the End User License Agreement (EULA).
+
+There are drawbacks to generating Word documents with ASP server-side Automation: 
+Performance Microsoft Word is an out-of-process Automation server; out-of-process calls take longer to execute.
+
+
+Scalability As an Automation server, Microsoft Word has substantial overhead because the Winword.exe 
+file must be loaded in order for you to reap the benefits of Word's rich object model. 
+By generating your documents from scratch and without the use of the Word object model, 
+you can make your ASP application more scaleable and also increase performance. 
+This approach is used in the following samples that demonstrate how to use the FileSystemObject 
+to create an RTF file that can be interpreted in Microsoft Word at browser clients.
+
+The first sample shows how to use ASP to create an RTF document that contains headers and footers, 
+contains a table, and uses different font styles and colors for text throughout the document. 
+The first sample uses ADO to access data from the sample Northwind Access database to
+ create a 90-plus-page document. 
+
+The second sample demonstrates how to create an RTF document similar to that of a Word mail merge. 
+The resulting document contains headers and footers, various paragraph formatting and page breaks, 
+and uses different font styles and types through the document. This sample also uses ADO to access 
+data from the Northwind database to create a 170-plus-page document. 
+
+NOTE: The Rich Text Format (RTF) specification is a public specification to generate RTF-compatible 
+text files. You can use the documentation for the specification at the following Microsoft Developer 
+Network (MSDN) Web site as a resource to help you build your own RTF files. However, the specification 
+is provided "as-is", and is not supportted by Microsoft Technical Support. For the latest version of the 
+RTF specification, see the following MSDN Web site: 

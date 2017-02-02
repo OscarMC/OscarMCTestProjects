@@ -1,0 +1,5 @@
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorClient\bin\client.exe.config
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorClient\bin\client.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorClient\bin\client.pdb
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorClient\obj\Debug\client.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorClient\obj\Debug\client.pdb

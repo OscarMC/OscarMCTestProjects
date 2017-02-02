@@ -1,0 +1,48 @@
+BODY
+{
+    FONT-FAMILY: Verdana
+}
+.ServerButton
+{
+    FONT-SIZE: 10pt;
+    COLOR: teal;
+    FONT-FAMILY: Verdana
+}
+.ServerTextBox
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana
+}
+.ServerDropDown
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Verdana
+}
+.ServerCheckBox
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana
+}
+.LinkButton
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana
+}
+
+.LinkButton:hover
+{
+    FONT-SIZE: 10pt;
+    COLOR: Red;
+    FONT-FAMILY: Verdana
+}
+
+.TableRow
+{
+	
+}
+
+.TableRow:hover
+{   BACKGROUND-COLOR: Red;
+    
+}

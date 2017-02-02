@@ -1,0 +1,446 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7337FB67-6EB1-4125-940E-05826AAA7C8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SnippetEditor.My.MyApplication</StartupObject>
+    <RootNamespace>SnippetEditor</RootNamespace>
+    <AssemblyName>SnippetEditor</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Resources\SnippetEditor.ico</ApplicationIcon>
+    <OptionStrict>On</OptionStrict>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+    <PublishUrl>http://localhost/SnippetEditor</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.Zip, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Forms\AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code Colorisers\ColorToken.vb" />
+    <Compile Include="Code Colorisers\Coloriser.vb" />
+    <Compile Include="Code Colorisers\CSharpCodeColoriser.vb" />
+    <Compile Include="Code Colorisers\IColorTokenProvider.vb" />
+    <Compile Include="Code Colorisers\JSharpCodeColoriser.vb" />
+    <Compile Include="Code Colorisers\LanguageKind.vb" />
+    <Compile Include="Code Colorisers\UnknownCodeColoriser.vb" />
+    <Compile Include="Code Colorisers\VBCodeColoriser.vb" />
+    <Compile Include="Code Colorisers\XMLCodeColoriser.vb" />
+    <Compile Include="UI Forms\SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper classes\ActionResult.vb" />
+    <Compile Include="Helper classes\FileAssociation.vb" />
+    <Compile Include="Helper classes\PathEventArgs.vb" />
+    <Compile Include="Helper classes\Products.vb" />
+    <Compile Include="Helper classes\VSIWriter.vb" />
+    <Compile Include="UI Forms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\OptionsForm.Designer.vb">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\OptionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Snippet Object Model\Code.vb" />
+    <Compile Include="Snippet Object Model\CodeSnippet.vb" />
+    <Compile Include="Snippet Object Model\Declarations.vb" />
+    <Compile Include="Snippet Object Model\Header.vb" />
+    <Compile Include="Snippet Object Model\Import.vb" />
+    <Compile Include="Snippet Object Model\Imports.vb" />
+    <Compile Include="Snippet Object Model\Keywords.vb" />
+    <Compile Include="Snippet Object Model\Kind.vb" />
+    <Compile Include="Snippet Object Model\Language.vb" />
+    <Compile Include="Snippet Object Model\Reference.vb" />
+    <Compile Include="Snippet Object Model\References.vb" />
+    <Compile Include="Snippet Object Model\Replacement.vb" />
+    <Compile Include="Snippet Object Model\ReplacementKind.vb" />
+    <Compile Include="Snippet Object Model\Snippet.vb" />
+    <Compile Include="Snippet Object Model\SnippetFile.vb" />
+    <Compile Include="Snippet Object Model\SnippetTypes.vb" />
+    <Compile Include="UI Forms\TipsForm.Designer.vb">
+      <DependentUpon>TipsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Forms\TipsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Controls\ExpandablePanel.vb">
+    </Compile>
+    <Compile Include="UI Controls\GradientLabel.vb" />
+    <Compile Include="UI Controls\InputForm.Designer.vb">
+      <DependentUpon>InputForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\InputForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Controls\MessageDialogue.Designer.vb">
+      <DependentUpon>MessageDialogue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\MessageDialogue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Controls\SnippetEditorControl.Designer.vb">
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\SnippetEditorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI Controls\CodeEditor.vb">
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="UI Controls\SnippetExplorer.Designer.vb">
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI Controls\SnippetExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\SnippetDiagram.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Documentation\snippetformat.xsd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application1.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI Forms\AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MainForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MainForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MainForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MainForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\OptionsForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\OptionsForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\OptionsForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\OptionsForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Forms\TipsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TipsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\InputForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\MessageDialogue.resx">
+      <DependentUpon>MessageDialogue.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetEditorControl.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetEditorControl.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetEditorControl.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetEditorControl.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetEditorControl.resx">
+      <DependentUpon>SnippetEditorControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetExplorer.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetExplorer.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetExplorer.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetExplorer.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Controls\SnippetExplorer.resx">
+      <DependentUpon>SnippetExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+      <InProject>False</InProject>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\Issues.txt" />
+    <None Include="app.config" />
+    <None Include="Documentation\vscontent.xsd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="My Project\DataSources\SnippetEditor.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\SnippetEditor.SnippetRepresentation.CodeSnippet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\snippet.bmp" />
+    <None Include="Resources\newFolder.bmp" />
+    <None Include="Resources\VSFolder_closed_hidden.bmp" />
+    <None Include="Resources\VSFolder_closed_virtual.bmp" />
+    <None Include="Resources\VSFolder_open.bmp" />
+    <None Include="Resources\VSFolder_open_hidden.bmp" />
+    <None Include="Resources\VSFolder_open_virtual.bmp" />
+    <None Include="Resources\Delete.bmp" />
+    <None Include="Resources\RefreshDocView.bmp" />
+    <None Include="Resources\Save.bmp" />
+    <None Include="Resources\Options.bmp" />
+    <None Include="Resources\Help.bmp" />
+    <None Include="Resources\ToVSI.bmp" />
+    <None Include="Resources\Expand_large.bmp" />
+    <None Include="Resources\Collapse_large.bmp" />
+    <None Include="Resources\message in a bottle.jpg" />
+    <None Include="Resources\book_open.bmp" />
+    <None Include="Resources\img_Close_trans.png" />
+    <None Include="Resources\img_Close.png" />
+    <None Include="Resources\ani_bottle.gif" />
+    <None Include="Resources\NewDocument.bmp" />
+    <None Include="Resources\folders.bmp" />
+    <None Include="Resources\img_Idea.bmp" />
+    <Content Include="Resources\SnippetEditor.ico" />
+    <Content Include="Resources\VSFolder_closed.bmp" />
+    <None Include="Resources\splash.jpg" />
+    <None Include="Resources\Zoom2.BMP" />
+    <None Include="Resources\VSFolder_fav.bmp" />
+    <None Include="Resources\SychronizeList.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

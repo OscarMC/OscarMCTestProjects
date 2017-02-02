@@ -1,0 +1,14 @@
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\Interop.VBIDE.dll
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.csproj.ResolveComReference.cache
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.CreateDocModel.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.CreateNewDoc.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.CreateNewRtf.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.introduction.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.Global.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.ModifyDocument.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.siteheader.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.sitemenu.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.table.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.WordClass.resources
+D:\ProyectosDePrueba\WordComparerCSharp\obj\Debug\WordApplication.csproj.GenerateResource.Cache

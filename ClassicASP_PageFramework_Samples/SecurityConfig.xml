@@ -1,0 +1,41 @@
+<SECURITY>
+<FOLDERS>
+	<FOLDER Path='\'>
+		<ALLOW users=',' roles=','/>
+		<DENY users=','  roles=','/>
+	<\FOLDER>
+</FOLDERS>
+
+<PAGE Name=''>
+	<ALLOW users=',' roles=','/>
+	<DENY users=','  roles=','/>
+</PAGE>
+
+</SECURITY>
+
+XPATH:
+/FOLDERS/[FOLDER='foldername']/DENNY
+/PAGES/[PAGE='foldername']/DENNY
+
+* MEANS ALL
+? MEANS NOT AUTHENTICATED
+
+How to process?
+
+Request comes through:
+	Xpath against folder, if doesn't find it then look at root path
+	
+		\ = Root
+		Check if user can access the page,
+		If not
+		loop through all the roles and check if at least one can access the page...
+		\ Look for allow with user
+		
+		//PAGE[@Name = 'PageName']/ALLOW[@users='myuser' Or @role	s='myroles]
+		//FOLDER[@Path = 'Path']/ALLOW[@users='myuser' Or @roles='myroles]
+		
+		OR
+		attribute::*
+		
+		can = PAGE[@Name = 'PageName']/ALLOW/[@*]
+		//FOLDER[@Path = 'Path']/ALLOW[@users='myuser' Or @roles='myroles]

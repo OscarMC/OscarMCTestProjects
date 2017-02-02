@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:w="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="Microsoft.SDKSamples.AlarmNotifications.JS" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>Alarm Notifications JS sample</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="EN-US" />
+  </Resources>
+  <Applications>
+    <Application Id="AlarmNotificationsSample.App" StartPage="default.html">
+      <VisualElements DisplayName="Alarm Notifications JS sample" Logo="images\squareTile-sdk.png" SmallLogo="images\smallTile-sdk.png" Description="Alarm Notifications JS sample" ForegroundText="light" BackgroundColor="#00b2f0" ToastCapable="true">
+        <LockScreen Notification="badge" BadgeLogo="images\badgelogo-sdk.png" />
+        <DefaultTile ShortName="Alarm Notifications JS" ShowName="allLogos" />
+        <SplashScreen BackgroundColor="#00b2f0" Image="images\splash-sdk.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\backgroundtask.js">
+          <BackgroundTasks>
+            <Task Type="audio" />
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+        <w:Extension Category="windows.alarm" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <Dependencies>
+    <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
+  </Dependencies>
+  <build:Metadata>
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.10586.0 (th2_release.151029-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.40629.0" />
+    <build:Item Name="ProjectGUID" Value="{9ee3ba23-05ba-402a-a8b6-f3281c3f8b2c}" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
+  </build:Metadata>
+</Package>

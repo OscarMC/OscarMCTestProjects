@@ -1,0 +1,6 @@
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\bin\service.exe.config
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\bin\service.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\bin\service.pdb
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\obj\Debug\CalculatorService.csprojResolveAssemblyReference.cache
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\obj\Debug\service.exe
+D:\ProyectosDePrueba\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService\CS\CalculatorService\obj\Debug\service.pdb

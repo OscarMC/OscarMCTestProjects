@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>7.0.9466</ProductVersion>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectGuid>{93D04C4A-467C-48CC-96B2-D0B2DC6CB9FD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>WordApplication</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WordApplication</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CCWordApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreateDocModel.aspx.cs">
+      <DependentUpon>CreateDocModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateDocModel.aspx.designer.cs">
+      <DependentUpon>CreateDocModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewDoc.aspx.cs">
+      <DependentUpon>CreateNewDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNewDoc.aspx.designer.cs">
+      <DependentUpon>CreateNewDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewRtf.aspx.cs">
+      <DependentUpon>CreateNewRtf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNewRtf.aspx.designer.cs">
+      <DependentUpon>CreateNewRtf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModifyDocument.aspx.cs">
+      <DependentUpon>ModifyDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyDocument.aspx.designer.cs">
+      <DependentUpon>ModifyDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siteheader.ascx.cs">
+      <DependentUpon>siteheader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteheader.ascx.designer.cs">
+      <DependentUpon>siteheader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sitemenu.ascx.cs">
+      <DependentUpon>sitemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitemenu.ascx.designer.cs">
+      <DependentUpon>sitemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="table.aspx.cs">
+      <DependentUpon>table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="table.aspx.designer.cs">
+      <DependentUpon>table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WordClass.aspx.cs">
+      <DependentUpon>WordClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WordClass.aspx.designer.cs">
+      <DependentUpon>WordClass.aspx</DependentUpon>
+    </Compile>
+    <Content Include="CreateDocModel.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CreateNewDoc.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="CreateNewRtf.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="document\ddd.html" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="ModifyDocument.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="siteheader.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="sitemenu.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Spacer.gif" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="table.aspx" />
+    <Content Include="TextFile1.txt" />
+    <Content Include="Web.config" />
+    <Content Include="WordClass.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <EmbeddedResource Include="CreateDocModel.aspx.resx">
+      <DependentUpon>CreateDocModel.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewDoc.aspx.resx">
+      <DependentUpon>CreateNewDoc.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewRtf.aspx.resx">
+      <DependentUpon>CreateNewRtf.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyDocument.aspx.resx">
+      <DependentUpon>ModifyDocument.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteheader.ascx.resx">
+      <DependentUpon>siteheader.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sitemenu.ascx.resx">
+      <DependentUpon>sitemenu.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table.aspx.resx">
+      <DependentUpon>table.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordClass.aspx.resx">
+      <DependentUpon>WordClass.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="document\ddd.doc" />
+    <None Include="document\ff.rtf" />
+    <None Include="template\table.dot" />
+    <None Include="template\template1.dot" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/WordApplication</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

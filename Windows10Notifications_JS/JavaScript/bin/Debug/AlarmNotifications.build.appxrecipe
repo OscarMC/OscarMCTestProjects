@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>OMAS10</Machine>
+    <WindowsUser>omas</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>Microsoft.SDKSamples.AlarmNotifications.JS</PackageIdentityName>
+    <IntermediateOutputPath>D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\css\Toast.css">
+      <PackagePath>css\Toast.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\sample-utils\sample-utils.css">
+      <PackagePath>sample-utils\sample-utils.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\html\Toast.html">
+      <PackagePath>html\Toast.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\sample-utils\footer.html">
+      <PackagePath>sample-utils\footer.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\sample-utils\header.html">
+      <PackagePath>sample-utils\header.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\sample-utils\scenario-select.html">
+      <PackagePath>sample-utils\scenario-select.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\microsoft-sdk.png">
+      <PackagePath>images\microsoft-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\placeholder-sdk.png">
+      <PackagePath>images\placeholder-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\smallTile-sdk.png">
+      <PackagePath>images\smallTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\splash-sdk.png">
+      <PackagePath>images\splash-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\squareTile-sdk.png">
+      <PackagePath>images\squareTile-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\storeLogo-sdk.png">
+      <PackagePath>images\storeLogo-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\tile-sdk.png">
+      <PackagePath>images\tile-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\windows-sdk.png">
+      <PackagePath>images\windows-sdk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\images\badgelogo-sdk.png">
+      <PackagePath>images\badgelogo-sdk.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\js\backgroundtask.js">
+      <PackagePath>js\backgroundtask.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\js\Toast.js">
+      <PackagePath>js\Toast.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\sample-utils\sample-utils.js">
+      <PackagePath>sample-utils\sample-utils.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00
+
+[$RootKey$\InstalledProducts\ExtendedImmediateWindowPackage]
+@="#110"
+"Package"="{18480e6d-1c44-4105-8ad8-718429a72d39}"
+"ProductDetails"="#112"
+"PID"="1.0"
+"LogoID"="#400"
+[$RootKey$\Packages\{18480e6d-1c44-4105-8ad8-718429a72d39}]
+@="uboot.ExtendedImmediateWindow.ExtendedImmediateWindowPackage, ExtendedImmediateWindow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"InprocServer32"="%windir%\\system32\\mscoree.dll"
+"Class"="uboot.ExtendedImmediateWindow.ExtendedImmediateWindowPackage"
+"Assembly"="ExtendedImmediateWindow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+[$RootKey$\Editors\{73d1485b-be9a-4d7f-aabb-54825fbe2752}]
+"DisplayName"="#101"
+"Package"="{18480e6d-1c44-4105-8ad8-718429a72d39}"
+[$RootKey$\Editors\{73d1485b-be9a-4d7f-aabb-54825fbe2752}\Extensions]
+"im"=dword:00000020
+[$RootKey$\Editors\{73d1485b-be9a-4d7f-aabb-54825fbe2752}]
+@="EditorFactory"
+"DisplayName"="#101"
+"Package"="{18480e6d-1c44-4105-8ad8-718429a72d39}"
+"EditorTrustLevel"=dword:00000000
+[$RootKey$\Editors\{73d1485b-be9a-4d7f-aabb-54825fbe2752}\LogicalViews]
+[$RootKey$\Packages\{18480e6d-1c44-4105-8ad8-718429a72d39}]
+"ID"=dword:00000001
+"MinEdition"="Standard"
+"ProductVersion"="1.0"
+"ProductName"="Extended Immediate Window"
+"CompanyName"="uboot"
+[$RootKey$\Menus]
+"{18480e6d-1c44-4105-8ad8-718429a72d39}"=", 1000, 1"
+[$RootKey$\ToolWindows\{832081c5-7814-4253-80e7-c66d82f0540d}]
+@="{18480e6d-1c44-4105-8ad8-718429a72d39}"
+"Name"="uboot.ExtendedImmediateWindow.VsToolWindow"
+

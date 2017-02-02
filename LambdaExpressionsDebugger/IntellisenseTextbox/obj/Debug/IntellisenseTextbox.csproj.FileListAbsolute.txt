@@ -1,0 +1,23 @@
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.UserInterface.AutoCompleteItemList.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.AutoCompleteList.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.AutoCompleteListComponent.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.IntellisenseTextBox.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.SyntaxTextBox.resources
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.csproj.GenerateResource.Cache
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\bin\Debug\IntellisenseTextbox.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\bin\Debug\IntellisenseTextbox.pdb
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.dll
+C:\Users\Stanzy\Documents\Visual Studio 2008\Projects\MyOwnIntellisenseTextbox\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.pdb
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\bin\Debug\IntellisenseTextbox.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\bin\Debug\IntellisenseTextbox.pdb
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\ResolveAssemblyReference.cache
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.UserInterface.AutoCompleteItemList.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.AutoCompleteList.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.AutoCompleteListComponent.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.IntellisenseTextBox.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.SyntaxTextBox.resources
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\ResGen.read.1.tlog
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\ResGen.write.1.tlog
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.dll
+D:\ProyectosDePrueba\LambdaExpressionsDebugger\IntellisenseTextbox\obj\Debug\IntellisenseTextbox.pdb

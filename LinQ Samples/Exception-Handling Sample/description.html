@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Indexeurs, exemple</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Indexeurs, exemple</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            .NET Framework
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Th&#232;mes">Th&#232;mes</label>
+                        <div id="Th&#232;mes">
+                            Indexers, Language Samples
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Derni&#232;re mise &#224; jour</label>
+                    <div id="LastUpdated">28/11/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">Licence</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Indexers-Sample-07f8e88d">Consulter cet exemple en ligne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>
+<h1>Indexeurs, exemple</h1>
+<div id="mainSection">
+<div id="mainBody">
+<div id="allHistory" class="saveHistory"></div>
+<p></p>
+<p>Cet exemple montre comment les classes&nbsp;C# peuvent d&eacute;clarer des indexeurs pour fournir un acc&egrave;s de type tableau aux classes.</p>
+<div class="alert">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<th align="left">Note de s&eacute;curit&eacute; </th>
+</tr>
+<tr>
+<td>
+<p>Cet exemple de code est fourni pour illustrer un concept et ne doit pas &ecirc;tre utilis&eacute; dans des applications ou des sites Web, car il peut ne pas illustrer les pratiques de programmation les plus s&ucirc;res. Microsoft n'assume aucune responsabilit&eacute;
+ pour tout dommage indirect ou cons&eacute;cutif en cas d'utilisation de l'exemple de code &agrave; des fins autres que celles pr&eacute;vues.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="heading">Pour g&eacute;n&eacute;rer et ex&eacute;cuter l'exemple Indexeurs dans Visual Studio</h1>
+<div id="procedureSection1" class="section">
+<ol>
+<li>
+<p>Dans l'<b>Explorateur de solutions</b>, cliquez avec le bouton droit sur le projet Indexers, puis cliquez sur
+<b>Propri&eacute;t&eacute;s</b>.</p>
+</li><li>
+<p>Ouvrez le dossier Propri&eacute;t&eacute;s de configuration, puis cliquez sur <b>
+D&eacute;boguer</b>.</p>
+</li><li>
+<p>Dans la propri&eacute;t&eacute; Arguments de la ligne de commande, entrez <code>
+..\..\Test.txt</code>.</p>
+</li><li>
+<p>Cliquez sur <b>OK</b>.</p>
+</li><li>
+<p>Dans le menu <b>D&eacute;boguer</b>, cliquez sur <b>Ex&eacute;cuter sans d&eacute;bogage</b>.</p>
+</li></ol>
+</div>
+<h1 class="heading">Pour g&eacute;n&eacute;rer et ex&eacute;cuter l'exemple Indexeurs &agrave; partir de la ligne de commande</h1>
+<div id="procedureSection2" class="section">
+<ol>
+<li>
+<p>Pour compiler l'exemple de programme, tapez le texte suivant &agrave; l'invite de commandes&nbsp;:
+</p>
+<div class="code"><span>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2">
+<pre>csc indexer.cs</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>L'exemple de programme inverse les octets dans un fichier fourni en tant qu'argument de la ligne de commande. Par exemple, pour inverser les octets dans Test.txt et voir le r&eacute;sultat, ex&eacute;cutez les commandes suivantes&nbsp;:
+</p>
+<div class="code"><span>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2">
+<pre>indexers Test.txt
+type Test.txt</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>
+<p>Pour restaurer l'&eacute;tat initial du fichier apr&egrave;s l'inversion, r&eacute;ex&eacute;cutez le programme sur le m&ecirc;me fichier.</p>
+</li></ol>
+</div>
+</div>
+<div id="footer">
+<div class="footerLine"></div>
+Pour faire une suggestion ou signaler un bogue relatif &agrave; l'Aide ou &agrave; une autre fonctionnalit&eacute; de ce produit, acc&eacute;dez au
+<a href="http://go.microsoft.com/fwlink/?LinkId=9790442">site de commentaires</a>.
+</div>
+</div>
+</h1>
+
+</div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+.IBOTSearchResults
+{
+    BORDER-RIGHT: gainsboro 1px solid;
+    BORDER-TOP: gainsboro 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: gainsboro 1px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: gainsboro 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTErrorsSection
+{
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTQuickSearchControl
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #9ac5dc
+}
+.IBOTQuickSearchCaption
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #295a94;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #9ac5dc
+}
+.IBOTDetailsHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: #336699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTBodyLink
+{
+    FONT-SIZE: 100%;
+    COLOR: #336699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTBodyText
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTBodyTextInput
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTBodyTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 80%;
+    COLOR: #336699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTBodyBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTTracker
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: yellow;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTTrackerCurrent
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+IBOTOPTION
+{
+    FONT-SIZE: 11px
+}
+.IBOTresults_table_link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTresults_table_link:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTsearch_results_link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: #336699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTsearch_results_link:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: #336699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTnextlink
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTnextlinkCopy
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTnextlink:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTLeftNav
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 90%;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #336699
+}
+.IBOTLeftNavlink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 70%;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #9ac5dc;
+    TEXT-DECORATION: none
+}
+.IBOTLeftNavlink:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 70%;
+    COLOR: #ff0000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTLeftNavlink:unknown
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 70%;
+    COLOR: #ff0000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.IBOTLeftNavcoal
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 90%;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.IBOTLeftNavlinkcoal
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 70%;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.IBOTLeftNavlinkcoal:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 70%;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+BODY
+{
+    FONT-FAMILY: verdana
+}

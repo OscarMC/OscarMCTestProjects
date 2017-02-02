@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>可為 Null 的範例</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>可為 Null 的範例</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="技術">技術</label>
+                        <div id="技術">
+                            .NET Framework
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="主題">主題</label>
+                        <div id="主題">
+                            Nullable Type, Language Samples
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">上次更新日期</label>
+                    <div id="LastUpdated">2011/11/28</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">授權</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Nullable-Sample-f13ddf53">在線上檢視此範例</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = '複製程式碼';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>可為 Null 的範例</h1>
+<div id="mainSection">
+<div id="mainBody">
+<div class="saveHistory" id="allHistory"></div>
+<p>&nbsp;</p>
+<p>這個範例將示範可為 Null 的型別 (Nullable Type) 之用法。這項功能可以讓實&#20540;型別具有未初始化或空白狀態，類&#20284;參考型別設定為 <strong>
+null</strong> 的方式。</p>
+<p><strong>安全性注意事項</strong> 這個程式碼範例僅供概念說明之用，同時因為範例中的程式碼撰寫並沒有周全地顧及所有安全性問題，所以本範例不適用於實際執行的應用程式或網站中。如果使用者擅自將範例程式碼用於其他意圖而導致連帶事件或重大損害時，Microsoft 將不承擔任何責任。</p>
+<h1 class="heading">若要建置和執行 Visual Studio 之可為 Null 的程式碼範例</h1>
+<div class="section" id="procedureSection1">
+<ol>
+<li>
+<p>在 [Windows 檔案總管] 中按兩下檔案，或按一下 [<strong>檔案</strong>] 功能表上的 [<strong>開啟</strong>]，開啟 Nullable.sln 方案檔。</p>
+</li><li>
+<p>按一下 [<strong>偵錯</strong>] 功能表上的 [<strong>啟動但不偵錯</strong>]。</p>
+</li></ol>
+</div>
+<h1 class="heading">若要從命令列建置及執行可為 Null 的程式碼範例</h1>
+<div class="section" id="procedureSection2">
+<ol>
+<li>
+<p>使用<strong>變更目錄 (cd)</strong>命令變更到 Nullable 目錄。</p>
+</li><li>
+<p>輸入下列命令︰</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td colspan="2">
+<pre><span>cd Basics
+</span>csc Basics.cs
+Basics</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>輸入下列命令：<br>
+&nbsp;
+<div class="code"><span>
+<table id="table1" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>
+<pre>cd ..\Boxing
+csc Boxing.cs
+Boxing</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>輸入下列命令：<br>
+&nbsp;
+<div class="code"><span>
+<table id="table2" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>
+<pre>cd ..\Operator
+csc Operator.cs
+Operator</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li></ol>
+</div>
+</div>
+<div id="footer">
+<div class="footerLine"></div>
+若要提出建議或者回報 [說明] 或本產品其他功能的錯誤，請前往<a href="http://go.microsoft.com/fwlink/?LinkId=9790442">意見網站</a>。</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

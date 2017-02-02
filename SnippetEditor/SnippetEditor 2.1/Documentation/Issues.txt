@@ -1,0 +1,24 @@
+Please compile the code before opening the forms designer for the first time.  
+If you recieve an error when trying to open the form or control's designer then
+ - close all designers
+ - open the Data Sources window
+ - make sure you have compiled the application
+The designer should now open without error.
+
+
+There appears to also be a deisgner generated code issue when binding with My.Settings.  If the runtuime fails, search for the intial type setting in the .designer.vb fiel and repalce it as follows:
+
+Search for :
+Me.MySettingsBindingSource.DataSource = GetType(System.Configuration.ApplicationSettingsBase)
+
+Replace with :
+Me.MySettingsBindingSource.DataSource = GetType(SnippetEditor.My.MySettings)
+
+
+
+
+
+
+
+
+

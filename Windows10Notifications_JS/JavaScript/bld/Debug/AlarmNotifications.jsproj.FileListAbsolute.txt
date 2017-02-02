@@ -1,0 +1,15 @@
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bin\Debug\ReverseMap\resources.pri
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bin\Debug\AppxManifest.xml
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bin\Debug\AlarmNotifications.build.appxrecipe
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\priconfig.xml
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\priconfig.xml.intermediate
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\layout.resfiles
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\layout.resfiles.intermediate
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\resources.resfiles
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\resources.resfiles.intermediate
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\pri.resfiles
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\pri.resfiles.intermediate
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\qualifiers.txt
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\qualifiers.txt.intermediate
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\ProyectosDePrueba\Windows10Notifications_JS\JavaScript\bld\Debug\ProjectArchitectures.txt

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Attribute_Expected" xml:space="preserve">
+    <value>L'attribut {0} est nécessaire pour le nœud :</value>
+  </data>
+  <data name="Cannot_Find_CodeSnippet" xml:space="preserve">
+    <value>Impossible de trouver un extrait de code dans le fichier</value>
+  </data>
+  <data name="Cannot_Find_CodeSnippets" xml:space="preserve">
+    <value>Impossible de trouver une collection d'extrait de code dans le fichier</value>
+  </data>
+  <data name="Compiled_Code" xml:space="preserve">
+    <value>Code compilé :</value>
+  </data>
+  <data name="Element_Expected" xml:space="preserve">
+    <value>L'élément {0} est nécessaire pour le nœud :</value>
+  </data>
+  <data name="Error_Loading_Code_Snippet" xml:space="preserve">
+    <value>Erreur au chargement de l'extrait de code</value>
+  </data>
+  <data name="Error_Loading_Xml_File" xml:space="preserve">
+    <value>Erreur au chargement du fichier XML</value>
+  </data>
+  <data name="Error_Opening_File" xml:space="preserve">
+    <value>Le fichier suivant ne peut être lu :</value>
+  </data>
+  <data name="Error_Opening_File_Tile" xml:space="preserve">
+    <value>Impossible d'ouvrir le fichier</value>
+  </data>
+  <data name="Error_Saving_To_File" xml:space="preserve">
+    <value>Erreur à la sauvegarde du fichier…</value>
+  </data>
+  <data name="Error_Saving_To_File_Message" xml:space="preserve">
+    <value>Assurez-vous que le fichier n'est pas en lecture seule et que vous avez les permissions nécessaires pour y accéder.</value>
+  </data>
+  <data name="Export_SaveTypeFilter" xml:space="preserve">
+    <value>Fichier d'installation de contenu de Visual Studio (*.vsi)|*.vsi</value>
+  </data>
+  <data name="Export_Snippet_Cancelled" xml:space="preserve">
+    <value>opération d'exportation annulée</value>
+  </data>
+  <data name="Export_Snippet_Error" xml:space="preserve">
+    <value> impossible d'exporter l'extrait de code dans un VSI</value>
+  </data>
+  <data name="Export_Snippet_Success" xml:space="preserve">
+    <value> Exportation de l'extrait de code dans un VSI réussie</value>
+  </data>
+  <data name="Export_Title" xml:space="preserve">
+    <value>Exporter l'extrait de code dans un VSI</value>
+  </data>
+  <data name="Folder_Browser_Description" xml:space="preserve">
+    <value>Sélectionner le dossier à ouvrir…</value>
+  </data>
+  <data name="Item_Missing_Choice_Explanation" xml:space="preserve">
+    <value>Appuyer sur OK pour continuer le chargement ou sur Annuler.</value>
+  </data>
+  <data name="Language_Not_Supported" xml:space="preserve">
+    <value>Langage non supporté</value>
+  </data>
+  <data name="Mnu_Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Mnu_Remove" xml:space="preserve">
+    <value>Enlever</value>
+  </data>
+  <data name="Msg_Add_Existing_Folder_Prompt" xml:space="preserve">
+    <value>Sélectionner un dossier pour ajouter votre collection d'extrait de code</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Default" xml:space="preserve">
+    <value>MonDossier</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Prompt" xml:space="preserve">
+    <value>Ajouter un nouveau dossier</value>
+  </data>
+  <data name="Msg_Add_New_Folder_Title" xml:space="preserve">
+    <value>Entrer un nom pour le nouveau dossier</value>
+  </data>
+  <data name="Msg_Add_New_Snippet_Default" xml:space="preserve">
+    <value>Nouvel extrait de code</value>
+  </data>
+  <data name="Msg_Add_New_Snippet_Prompt" xml:space="preserve">
+    <value>Entrer un nom pour le nouvel extrait de code</value>
+  </data>
+  <data name="Msg_Add_New_Snippet_Title" xml:space="preserve">
+    <value>Ajouter un nouvel extrait de code</value>
+  </data>
+  <data name="Msg_Delete_File_Prompt" xml:space="preserve">
+    <value>Attention : Ceçi supprimera définitivement le fichier contenant votre extrait de code. Etes-vous sur de vouloir supprimer cet extrait de code ?</value>
+  </data>
+  <data name="Msg_Delete_File_Title" xml:space="preserve">
+    <value>Supprimer l'extrait de code</value>
+  </data>
+  <data name="Msg_Delete_Folder_Prompt" xml:space="preserve">
+    <value>Etes-vous sur de vouloir supprimer le dossier :</value>
+  </data>
+  <data name="Msg_Delete_Folder_Title" xml:space="preserve">
+    <value>Supprimer ce dossier</value>
+  </data>
+  <data name="Msg_Remove_Folder_Prompt" xml:space="preserve">
+    <value>Etes-vous sur de vouloir retirer de votre collection d'extrait de code le dossier :</value>
+  </data>
+  <data name="Msg_Remove_Folder_Title" xml:space="preserve">
+    <value>Supprimer le dossier</value>
+  </data>
+  <data name="MyDocs_Snippets_Path" xml:space="preserve">
+    <value>\Visual Studio\8.0\Code Snippets\VB\My Code Snippets\</value>
+  </data>
+  <data name="NewLiteral" xml:space="preserve">
+    <value>NouvelArgument</value>
+  </data>
+  <data name="NewObject" xml:space="preserve">
+    <value>NouvelObjet</value>
+  </data>
+  <data name="Open_Snippet" xml:space="preserve">
+    <value>Ouvrir l'extrait de code</value>
+  </data>
+  <data name="OpenSaveTypeFilter" xml:space="preserve">
+    <value>Extrait de code Visual Studio (*.snippet)|*.snippet|Tous les fichiers (*.*)|*.*</value>
+  </data>
+  <data name="Save_Snippet_As" xml:space="preserve">
+    <value>Enregistrer l'extrait de code sous</value>
+  </data>
+  <data name="Save_Snippet_Cancelled" xml:space="preserve">
+    <value>enregistrement annulé</value>
+  </data>
+  <data name="Save_Snippet_Error" xml:space="preserve">
+    <value> impossible de sauvegarder l'extrait de code</value>
+  </data>
+  <data name="Save_Snippet_Success" xml:space="preserve">
+    <value> l'extrait de code a été sauvegardé</value>
+  </data>
+  <data name="Snippet_Closing1" xml:space="preserve">
+    <value>L'extrait de code va être fermé.</value>
+  </data>
+  <data name="Snippet_Closing2" xml:space="preserve">
+    <value>Vouez-vous sauvegarder les modifications ?</value>
+  </data>
+  <data name="Snippet_Editor" xml:space="preserve">
+    <value>Editeur d'extrait de code</value>
+  </data>
+  <data name="Snippet_Extension" xml:space="preserve">
+    <value>snippet</value>
+  </data>
+  <data name="Untitled" xml:space="preserve">
+    <value>SansNom</value>
+  </data>
+  <data name="Compile_Error" xml:space="preserve">
+    <value>Erreur#</value>
+  </data>
+  <data name="Compile_Errors" xml:space="preserve">
+    <value>La compilation a trouvé {0} erreurs</value>
+  </data>
+  <data name="Compile_Line" xml:space="preserve">
+    <value>ligne</value>
+  </data>
+  <data name="Help_Text" xml:space="preserve">
+    <value>veuillez voir la documentation sur le gotdotnet</value>
+  </data>
+  <data name="Welcome_HTML" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta http-equiv="Content-Language" content="fr"&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1252"&gt;
+&lt;title&gt;VB Snippet Editor Tips&lt;/title&gt;
+&lt;style type="text/css"&gt;p{font-family: Verdana;font-size: 9pt;text-align: justify;}&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+&lt;h3&gt;Aide rapide :&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Double cliquez sur un extrait de code dans l'arborescence pour l'&lt;b&gt;
+éditer&lt;/b&gt;&lt;br&gt;
+&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;Pour créer un &lt;b&gt;nouvel&lt;/b&gt; extrait de code, sélectionnez le dossier ou vous voulez l'ajouter puis, clic droit sur ce dossier et sélectionner &lt;i&gt;Ajouter un nouvel extrait de code&lt;/i&gt; dans le menu contextuel&lt;br&gt;
+&amp;nbsp;&lt;/li&gt;
+    &lt;li&gt;Utiliser le filtrer pour vous aider dans vos &lt;b&gt;recherches&lt;/b&gt; 
+      d'extrait de code. Le filtre est cumulatif donc vous pouvez entrer un nouveau 
+      mot clé pour affiner vos recherches. Pour remettre à zéro le filtre, supprimer 
+      tous vos mots clés et cliquez sur le bouton Appliquer (ou appuyez sur Entrer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>

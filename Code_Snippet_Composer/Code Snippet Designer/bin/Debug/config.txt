@@ -1,0 +1,73 @@
+*
+* Configuration File for the Code Snippet Designer
+*
+
+* Remove the asteriks from the next line to activate tracing. 
+* This command needs restart of the code snippet designer!
+Trace:
+
+* Startpage: Leave an empty line or Enter the snippet folder here e.g. C:\Users\(user)\Documents\Visual Studio 2010\Code Snippets
+Startpage: 
+
+* Add user HTML tags. One on each line.
+* The header "HTML tags:" is mandatory!
+HTML tags:
+   <Type></Type>
+   <Object>
+   </Object>
+   </Literal>
+   <Literal></Literal>
+   <References>
+   </References>
+   <Reference>
+   </Reference>
+   <Assembly></Assembly>
+   <Imports>
+   </Imports>
+   <Import>
+   </Import>
+   <Namespace></Namespace>
+   </Namespace>
+   <ID>expression</ID>
+   <ToolTip>Expression to switch on</ToolTip>
+   <ID>cases</ID>
+   <Default>default:</Default> 
+   cases
+   GenerateSwitchCases($expression$)
+   <ID>type</ID>
+   <Default>int</Default>
+   <ID>name</ID>
+   <Default>field</Default> 
+   <ID>classname</ID>
+   <ToolTip>Class name</ToolTip>
+   <Function>ClassName()</Function>
+   <Default>ClassNamePlaceholder</Default>
+   <ID>SystemConsole</ID>
+   <Function>SimpleTypeName(global::System.Console)</Function> 
+   default:
+END HTML tags:
+
+* Add user C# code
+* Groups are: Snippets, DeclarationSnippets, Methods, Keywords
+* Group delimiter is an empty line. 
+* The header (C# elements:) is not mandatory nor is the indent
+C# elements:
+
+   * one each line
+   Snippets: 
+
+   * one each line
+   DeclarationSnippets:
+       int i = 0;
+       int n = 0;
+       for(i=0; i<; i++) { }
+       for(i=0; i<; i++) { }
+       
+   * several on each line delimited by a semicolon
+   Methods: 
+      ToInt(); IndexOf(""); LastIndexOf(""); EndsWidth("");
+      
+   * several on each line delimited by a semicolon  
+   Keywords: 
+   
+END C# elements:   
